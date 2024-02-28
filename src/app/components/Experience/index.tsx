@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const projects = [
   {name:"Team Sparta",
    logoSrc: "/images/teamSparta.png",
@@ -43,7 +45,7 @@ export default function Experience() {
                   href={project.url}
                   className="flex flex-col items-center justify-between transition duration-300 ease-in-out transform hover:scale-105 hover:bg-gray-300 hover:underline  hover:shadow-md"
                 >
-                  <img
+                  <Image
                     className="object-contain object-center w-full h-40 lg:h-48"
                     src={project.logoSrc}
                     alt={project.name}

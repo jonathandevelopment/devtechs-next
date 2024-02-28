@@ -48,7 +48,7 @@ import {
             <h2 className="text-base font-semibold leading-7 text-blue-700">Everything you need</h2>
             <p className="mt-2 text-3xl font-bold tracking-tight text-white sm:text-4xl">No Website? No problem.</p>
             <p className="mt-6 text-lg leading-8 text-gray-100">
-            Need an online presence but don't have a website? At <em>DevTechs</em>, we offer comprehensive web development and technology solutions to help you establish your online presence hassle-free. 
+            Need an online presence but don&apos;t have a website? At <em>DevTechs</em>, we offer comprehensive web development and technology solutions to help you establish your online presence hassle-free. 
             </p>
           </div>
         </div>

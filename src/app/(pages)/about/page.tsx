@@ -1,4 +1,6 @@
-const teamData = [
+import Image from "next/image";
+const 
+teamData = [
     {
       id: 1,
       name: "John Doe",
@@ -71,7 +73,7 @@ const teamData = [
             </p>
             <h3 className="text-2xl font-bold mb-2">Automation</h3>
             <p className="text-lg leading-relaxed mb-4">
-              Streamline your workflow with automation tools tailored to your business needs. Our experts leverage the power of automation to optimize efficiency, reduce manual tasks, and accelerate growth, giving you the competitive edge in today's digital landscape.
+              Streamline your workflow with automation tools tailored to your business needs. Our experts leverage the power of automation to optimize efficiency, reduce manual tasks, and accelerate growth, giving you the competitive edge in today&apos;s digital landscape.
             </p>
           </div>
   
@@ -80,7 +82,7 @@ const teamData = [
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
             {teamData.map(member => (
               <div key={member.id} className="flex flex-col items-center">
-                <img
+                <Image
                   src={member.image}
                   alt={member.name}
                   className="w-24 h-24 md:w-32 md:h-32 rounded-full object-cover mb-4"

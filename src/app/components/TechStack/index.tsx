@@ -9,46 +9,36 @@ import {
   
   const actions = [
     {
-      title: 'Request time off',
+      title: 'React.js',
       href: '#',
       icon: ClockIcon,
       iconForeground: 'text-teal-700',
       iconBackground: 'bg-teal-50',
+      description: 'Harness the power of React.js to build blazing-fast and interactive user interfaces. With its component-based architecture and virtual DOM, React.js enables seamless development of scalable web applications.',
     },
     {
-      title: 'Benefits',
+      title: 'TypeScript',
       href: '#',
       icon: CheckBadgeIcon,
       iconForeground: 'text-purple-700',
       iconBackground: 'bg-purple-50',
+      description: 'Elevate your JavaScript development with TypeScript, a statically typed superset of JavaScript. TypeScript adds optional static types, interfaces, and other advanced features to JavaScript, enabling enhanced code quality, tooling support, and developer productivity.',
     },
     {
-      title: 'Schedule a one-on-one',
+      title: 'Next.js',
       href: '#',
       icon: UsersIcon,
       iconForeground: 'text-sky-700',
       iconBackground: 'bg-sky-50',
+      description: 'Supercharge your React applications with Next.js, a minimalistic framework for server-side rendering and static site generation. Next.js simplifies the creation of React applications by providing built-in routing, server-side rendering, and other powerful features out of the box.',
     },
     {
-      title: 'Payroll',
+      title: 'HTML & CSS with Tailwind CSS',
       href: '#',
       icon: BanknotesIcon,
       iconForeground: 'text-yellow-700',
       iconBackground: 'bg-yellow-50',
-    },
-    {
-      title: 'Submit an expense',
-      href: '#',
-      icon: ReceiptRefundIcon,
-      iconForeground: 'text-rose-700',
-      iconBackground: 'bg-rose-50',
-    },
-    {
-      title: 'Training',
-      href: '#',
-      icon: AcademicCapIcon,
-      iconForeground: 'text-indigo-700',
-      iconBackground: 'bg-indigo-50',
+      description: 'Leverage the power of HTML and CSS, augmented by the utility-first framework Tailwind CSS, to create elegant and responsive web interfaces. HTML provides the structure, CSS offers styling capabilities, and Tailwind CSS enhances productivity with its pre-built utility classes for rapid UI development.',
     },
   ]
   
@@ -58,9 +48,9 @@ import {
   
   export default function TechStack() {
     return (
-      <>
-      <h1>Technologies we love</h1>
-      <div className="divide-y divide-gray-200 overflow-hidden rounded-lg bg-gray-200 shadow sm:grid sm:grid-cols-2 sm:gap-px sm:divide-y-0 lg:py-20 lg:px-20">
+      <div className='bg-gray-200 shadow pb-10'>
+      <h1 className='text-4xl max-w-7xl m-auto py-10 font-semibold px-6'>Technologies we love</h1>
+      <div className="divide-y divide-gray-200 overflow-hidden  sm:grid sm:grid-cols-2 sm:gap-px sm:divide-y-0 max-w-7xl m-auto">
             
             {actions.map((action, actionIdx) => (
                <div
@@ -93,8 +83,7 @@ import {
                      </a>
                    </h3>
                    <p className="mt-2 text-sm text-gray-500">
-                     Doloribus dolores nostrum quia qui natus officia quod et dolorem. Sit repellendus qui ut at blanditiis et
-                     quo et molestiae.
+                     {action.description}
                    </p>
                  </div>
                  <span
@@ -108,7 +97,7 @@ import {
                </div>
              ))}
            </div>
-      </>
+      </div>
       
     )
   }

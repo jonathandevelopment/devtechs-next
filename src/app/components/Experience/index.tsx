@@ -1,8 +1,25 @@
-
+const projects = [
+  {name:"Team Sparta",
+   logoSrc: "/images/teamSparta.png",
+   url:"https://www.teamsparta.info/"
+  },
+  {name:"Evolución Sonora",
+   logoSrc: "/images/evo.webp",
+   url:"https://www.evolucionsonora.com/"
+  },
+  {name:"CannaStore",
+   logoSrc: "/images/cannastore.svg",
+   url:"https://e-commerce-canastore.vercel.app/"
+  },
+  {name:"Roles Griegos",
+   logoSrc: "/images/logoroles.png",
+   url:"https://rolesgriegos.netlify.app/"
+  }
+];
 
 export default function Experience() {
     return (
-      <div className="bg-gray-50 py-24 sm:py-32">
+      <div className="bg-white py-16 sm:py-20">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="grid grid-cols-1 items-center gap-x-8 gap-y-16 lg:grid-cols-2">
             <div className="mx-auto w-full max-w-xl lg:mx-0">
@@ -13,46 +30,27 @@ export default function Experience() {
               <div className="mt-8 flex items-center gap-x-6">
                 <a
                   href="#"
-                  className="rounded-md bg-blue-700 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
+                  className="rounded-md bg-blue-700 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-blue-900 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
                 >
                   Contact us <span aria-hidden="true">&rarr;</span>
                 </a>
               </div>
             </div>
-            <div className="mx-auto grid w-full max-w-xl grid-cols-2 items-center gap-y-12 sm:gap-y-14 lg:mx-0 lg:max-w-none lg:pl-8">
-              <a href="https://www.teamsparta.info/" className="flex justify-between gap-6 flex-col items-center hover:underline border border-gray-700 ">
-                <img
-                    className="  object-contain object-left"
-                    src="/images/teamSparta.png"
-                    alt="Tuple"
-                    width={200}
-                    height={200}
-                />
-                <p className="text-center">Team Sparta</p>
-              </a>
-              
-
-              <img
-                className="  object-contain object-left"
-                src="/images/logoroles.png"
-                alt="Reform"
-                width={200}
-                height={200}
-              />
-              <img
-                className="  object-contain object-left"
-                src="/images/cannastore.svg"
-                alt="SavvyCal"
-                width={200}
-                height={200}
-              />
-              <img
-                className="  object-contain object-left"
-                src="/images/evo.webp"
-                alt="Laravel"
-                width={200}
-                height={200}
-              />
+            <div className="mx-auto grid w-full max-w-xl grid-cols-2 gap-12 sm:gap-14 lg:mx-0 lg:max-w-none lg:pl-8">
+              {projects.map((project, index) => (
+                <a
+                  key={project.name}
+                  href={project.url}
+                  className="flex flex-col items-center justify-between transition duration-300 ease-in-out transform hover:scale-105 hover:bg-gray-300 hover:underline  hover:shadow-md"
+                >
+                  <img
+                    className="object-contain object-center w-full h-40 lg:h-48"
+                    src={project.logoSrc}
+                    alt={project.name}
+                  />
+                  <p className="text-center text-xl font-semibold py-2">{project.name}</p>
+                </a>
+              ))}
             </div>
           </div>
         </div>

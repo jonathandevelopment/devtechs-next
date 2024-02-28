@@ -49,6 +49,8 @@ export default function Experience() {
                     className="object-contain object-center w-full h-40 lg:h-48"
                     src={project.logoSrc}
                     alt={project.name}
+                    width={400}
+                    height={400}
                   />
                   <p className="text-center text-xl font-semibold py-2">{project.name}</p>
                 </a>

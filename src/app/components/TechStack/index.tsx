@@ -48,7 +48,7 @@ import {
   
   export default function TechStack() {
     return (
-      <div className='bg-gray-200 shadow pb-10'>
+      <div className='bg-gray-500 shadow pb-10'>
       <h1 className='text-4xl max-w-7xl m-auto py-10 font-semibold px-6'>Technologies we love</h1>
       <div className="divide-y divide-gray-200 overflow-hidden  sm:grid sm:grid-cols-2 sm:gap-px sm:divide-y-0 max-w-7xl m-auto px-6">
             

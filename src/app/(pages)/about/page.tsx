@@ -5,25 +5,25 @@ teamData = [
       id: 1,
       name: "John Doe",
       position: "CEO",
-      image: "https://randomuser.me/api/portraits/men/1.jpg"
+      image: "/images/profile2.jpg"
     },
     {
       id: 2,
       name: "Jane Smith",
       position: "CTO",
-      image: "https://randomuser.me/api/portraits/women/2.jpg"
+      image: "/images/profile2.jpg"
     },
     {
       id: 3,
       name: "Michael Johnson",
       position: "Lead Developer",
-      image: "https://randomuser.me/api/portraits/men/3.jpg"
+      image: "/images/profile2.jpg"
     },
     {
       id: 4,
       name: "Emily Brown",
       position: "Marketing Manager",
-      image: "https://randomuser.me/api/portraits/women/4.jpg"
+      image: "/images/profile2.jpg"
     }
   ];// Import dynamic team member data
 
@@ -85,6 +85,8 @@ teamData = [
                 <Image
                   src={member.image}
                   alt={member.name}
+                  width={100}
+                  height={100}
                   className="w-24 h-24 md:w-32 md:h-32 rounded-full object-cover mb-4"
                 />
                 <h3 className="text-xl font-semibold mb-2">{member.name}</h3>

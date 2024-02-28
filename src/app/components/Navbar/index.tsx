@@ -2,13 +2,14 @@
 import { useState } from 'react'
 import { Dialog } from '@headlessui/react'
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
+import Link from 'next/link';
 
 const navigation = [
-    { name: 'Services', href: '#' },
-    { name: 'Technologies', href: '#' },
-    { name: 'Trusted', href: '#' },
-    { name: 'About', href: '#' },
-    { name: 'Contact', href: '#' },
+    { name: 'Services', href: '/#services' },
+    { name: 'Technologies', href: '/#technologies' },
+    { name: 'Trusted', href: '/#trusted' },
+    { name: 'About', href: '/about' },
+    { name: 'Contact', href: '/contact' },
   ]
 
 export default function Navbar() {
@@ -19,7 +20,7 @@ export default function Navbar() {
         <div className="mx-auto max-w-7xl">
           <div className="px-6 pt-6 lg:max-w-2xl lg:pl-8 lg:pr-0">
             <nav className="flex items-center justify-between lg:justify-start" aria-label="Global">
-              <a href="#" className="-m-1.5 p-1.5">
+              <Link href="/" className="-m-1.5 p-1.5">
                 <span className="sr-only">Your Company</span>
                 {/* <img
                   alt="Your Company"
@@ -29,7 +30,7 @@ export default function Navbar() {
                 <h3 className='text-white font-semibold bg-gradient-to-r from-blue-500 to-blue-700 py-3 px-6 rounded-full shadow-md'>
                   Dev<span className="text-white font-bold">Techs</span>
                 </h3>
-              </a>
+              </Link>
               <button
                 type="button"
                 className="-m-2.5 rounded-md p-2.5 text-gray-700 lg:hidden"

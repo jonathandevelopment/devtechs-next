@@ -42,7 +42,7 @@ import {
   
   export default function Services() {
     return (
-      <div className="bg-gray-900 py-24 sm:py-20">
+      <div id="services" className="bg-gray-900 py-24 sm:py-20">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="max-w-2xl ">
             <h2 className="text-base font-semibold leading-7 text-blue-700">Everything you need</h2>
